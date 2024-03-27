@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>E:\JAT-Guvi\BestBuyCapstoneProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 5 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC002_LoginTest" class="method navigator-link" hash-for-method="LoginTest(aswinkumar_r@outlook.com, Missisippi@123, Aswin)">LoginTest(aswinkumar_r@outlook.com, Missisippi@123, Aswin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC004_SearchAndAddToCartTest" class="method navigator-link" hash-for-method="SearchandAddToCart">SearchandAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC005_ShopByDepartmentTest" class="method navigator-link" hash-for-method="Shopbydept">Shopbydept</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC001_SignUpTest" class="method navigator-link" hash-for-method="SignUpTest(Aswin, Kumar, aswinkumar_r@outlook.com, Missisippi@123, 7010778832)">SignUpTest(Aswin, Kumar, aswinkumar_r@outlook.com, Missisippi@123, 7010778832)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC008_MenuValidation" class="method navigator-link" hash-for-method="menuValidation(Deal of the Day, Best Buy | Official Online Store | Shop Now &amp; Save)">menuValidation(Deal of the Day, Best Buy | Official Online Store | Shop Now & Save)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC003_BottomLinksValidation" class="method navigator-link" hash-for-method="BottonLinksValidation(State Privacy Rights, State Privacy Rights - Best Buy)">BottonLinksValidation(State Privacy Rights, State Privacy Rights - Best Buy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC003_BottomLinksValidation" class="method navigator-link" hash-for-method="BottonLinksValidation(Interest-Based Ads, Interest-Based Ads - Best Buy)">BottonLinksValidation(Interest-Based Ads, Interest-Based Ads - Best Buy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC003_BottomLinksValidation" class="method navigator-link" hash-for-method="BottonLinksValidation(Terms &amp; Conditions, BestBuy.com Terms and Conditions)">BottonLinksValidation(Terms & Conditions, BestBuy.com Terms and Conditions)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC003_BottomLinksValidation" class="method navigator-link" hash-for-method="BottonLinksValidation(Accessibility, Accessibility - Best Buy)">BottonLinksValidation(Accessibility, Accessibility - Best Buy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC003_BottomLinksValidation" class="method navigator-link" hash-for-method="BottonLinksValidation(Privacy, Privacy Policy Hub - Best Buy)">BottonLinksValidation(Privacy, Privacy Policy Hub - Best Buy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC009_CheckoutTest" class="method navigator-link" hash-for-method="CheckOutTest(aswin, kumar, aswinkumar_r@outlook.com, 5555551234, 90 Bedford st corner of Groove st, New York City...)">CheckOutTest(aswin, kumar, aswinkumar_r@outlook.com, 5555551234, 90 Bedford st corner of Groove st, New York City...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC007_LinkIsNotBrokenTest" class="method navigator-link" hash-for-method="LinkIsNotBrokenTest">LinkIsNotBrokenTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC006_ShopByBrandTest" class="method navigator-link" hash-for-method="ShopByBrandTest">ShopByBrandTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC001_SignUpTest" class="method navigator-link" hash-for-method="SignUpTest(Test, User, test16@guvi16.com, Guvitest@123, 5555551234)">SignUpTest(Test, User, test16@guvi16.com, Guvitest@123, 5555551234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC008_MenuValidation" class="method navigator-link" hash-for-method="menuValidation(Credit Cards, Best Buy Credit Card: Rewards &amp; Financing)">menuValidation(Credit Cards, Best Buy Credit Card: Rewards & Financing)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC008_MenuValidation" class="method navigator-link" hash-for-method="menuValidation(Gift Ideas, Gift Ideas 2024: Best Gifts to Give This Year - Best Buy)">menuValidation(Gift Ideas, Gift Ideas 2024: Best Gifts to Give This Year - Best Buy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC008_MenuValidation" class="method navigator-link" hash-for-method="menuValidation(Gift Cards, Gifts Cards and E-Gift Cards - Best Buy)">menuValidation(Gift Cards, Gifts Cards and E-Gift Cards - Best Buy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC008_MenuValidation" class="method navigator-link" hash-for-method="menuValidation(My Best Buy Memberships, My Best Buy Memberships)">menuValidation(My Best Buy Memberships, My Best Buy Memberships)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC008_MenuValidation" class="method navigator-link" hash-for-method="menuValidation(Top Deals, Top Deals and Featured Offers on Electronics - Best Buy)">menuValidation(Top Deals, Top Deals and Featured Offers on Electronics - Best Buy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC008_MenuValidation" class="method navigator-link" hash-for-method="menuValidation(Yes, Best Buy Sells That, Yes, Best Buy Sells That – Best Buy)">menuValidation(Yes, Best Buy Sells That, Yes, Best Buy Sells That – Best Buy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC008_MenuValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="menuValidation(Deal of the Day, Best Buy | Official Online Store | Shop Now &amp; Save)">
+                  </a> <!-- menuValidation(Deal of the Day, Best Buy | Official Online Store | Shop Now & Save) -->
+                  <span class="method-name">menuValidation</span>
+                  <span class="parameters">(Deal of the Day, Best Buy | Official Online Store | Shop Now & Save)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Best Buy | Official Online Store | Shop Now &amp; Save] but found [Deal of the Day: Electronics Deals - Best Buy]
+	at pages.HomePage.menuValidation(HomePage.java:104)
+	at testcases.TC008_MenuValidation.menuValidation(TC008_MenuValidation.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC004_SearchAndAddToCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchandAddToCart">
+                  </a> <!-- SearchandAddToCart -->
+                  <span class="method-name">SearchandAddToCart</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;c-button c-button-primary c-button-lg c-button-block c-button-icon c-button-icon-leading add-to-cart-button&quot; type=&quot;button&quot; data-sku-id=&quot;6569391&quot; data-button-state=&quot;ADD_TO_CART&quot; style=&quot;padding:0 8px;margin-bottom:8px;margin-left:0px&quot;&gt;...&lt;/button&gt; is not clickable at point (1195, 655). Other element would receive the click: &lt;div id=&quot;survey_window&quot; class=&quot;modal fade modal-open in&quot; role=&quot;dialog&quot; style=&quot;margin-top: 214px; display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=123.0.6312.59)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [896e876bf7e4d993e7b9e0de8ebd9103, clickElement {id=f.8F56FC8872749BE207ADA3D561F91F36.d.C69392F5FF578330C25A2A9E46157BF4.e.252}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\kumar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57009/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (896e876bf7e4d993e7b9e0de8ebd9103)] -&gt; xpath: (//button[text()=&apos;Add to Cart&apos;])[1]]
+Session ID: 896e876bf7e4d993e7b9e0de8ebd9103
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at utility.Utilities.click(Utilities.java:54)
+	at pages.HomePage.addToCart(HomePage.java:63)
+	at testcases.TC004_SearchAndAddToCartTest.SearchandAddToCart(TC004_SearchAndAddToCartTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC002_LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest(aswinkumar_r@outlook.com, Missisippi@123, Aswin)">
+                  </a> <!-- LoginTest(aswinkumar_r@outlook.com, Missisippi@123, Aswin) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">(aswinkumar_r@outlook.com, Missisippi@123, Aswin)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;v-p-right-xxs line-clamp&apos;]&quot;}
+  (Session info: chrome=123.0.6312.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a373986b19cd99144ba562586a05844b, findElement {using=xpath, value=//span[@class=&apos;v-p-right-xxs line-clamp&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\kumar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56217/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a373986b19cd99144ba562586a05844b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.LoginPage.submit(LoginPage.java:46)
+	at testcases.TC002_LoginTest.LoginTest(TC002_LoginTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC001_SignUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignUpTest(Aswin, Kumar, aswinkumar_r@outlook.com, Missisippi@123, 7010778832)">
+                  </a> <!-- SignUpTest(Aswin, Kumar, aswinkumar_r@outlook.com, Missisippi@123, 7010778832) -->
+                  <span class="method-name">SignUpTest</span>
+                  <span class="parameters">(Aswin, Kumar, aswinkumar_r@outlook.com, Missisippi@123, 7010778832)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;v-p-right-xxs line-clamp&apos;]&quot;}
+  (Session info: chrome=123.0.6312.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [236de7117979385682e7dec8ad15a7d4, findElement {using=xpath, value=//span[@class=&apos;v-p-right-xxs line-clamp&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\kumar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56107/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 236de7117979385682e7dec8ad15a7d4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.SignUpPage.submit(SignUpPage.java:64)
+	at testcases.TC001_SignUpTest.SignUpTest(TC001_SignUpTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC005_ShopByDepartmentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Shopbydept">
+                  </a> <!-- Shopbydept -->
+                  <span class="method-name">Shopbydept</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Frequently bought together &apos;]&quot;}
+  (Session info: chrome=123.0.6312.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77712d6a719fec3378158baafde5d11d, findElement {using=xpath, value=//span[text()=&apos;Frequently bought together &apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\kumar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57193}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57193/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77712d6a719fec3378158baafde5d11d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.HomePage.addToCartAssertion(HomePage.java:69)
+	at testcases.TC005_ShopByDepartmentTest.Shopbydept(TC005_ShopByDepartmentTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC006_ShopByBrandTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ShopByBrandTest">
+                  </a> <!-- ShopByBrandTest -->
+                  <span class="method-name">ShopByBrandTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC003_BottomLinksValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BottonLinksValidation(State Privacy Rights, State Privacy Rights - Best Buy)">
+                  </a> <!-- BottonLinksValidation(State Privacy Rights, State Privacy Rights - Best Buy) -->
+                  <span class="method-name">BottonLinksValidation</span>
+                  <span class="parameters">(State Privacy Rights, State Privacy Rights - Best Buy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BottonLinksValidation(Interest-Based Ads, Interest-Based Ads - Best Buy)">
+                  </a> <!-- BottonLinksValidation(Interest-Based Ads, Interest-Based Ads - Best Buy) -->
+                  <span class="method-name">BottonLinksValidation</span>
+                  <span class="parameters">(Interest-Based Ads, Interest-Based Ads - Best Buy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BottonLinksValidation(Terms &amp; Conditions, BestBuy.com Terms and Conditions)">
+                  </a> <!-- BottonLinksValidation(Terms & Conditions, BestBuy.com Terms and Conditions) -->
+                  <span class="method-name">BottonLinksValidation</span>
+                  <span class="parameters">(Terms & Conditions, BestBuy.com Terms and Conditions)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BottonLinksValidation(Accessibility, Accessibility - Best Buy)">
+                  </a> <!-- BottonLinksValidation(Accessibility, Accessibility - Best Buy) -->
+                  <span class="method-name">BottonLinksValidation</span>
+                  <span class="parameters">(Accessibility, Accessibility - Best Buy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BottonLinksValidation(Privacy, Privacy Policy Hub - Best Buy)">
+                  </a> <!-- BottonLinksValidation(Privacy, Privacy Policy Hub - Best Buy) -->
+                  <span class="method-name">BottonLinksValidation</span>
+                  <span class="parameters">(Privacy, Privacy Policy Hub - Best Buy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC008_MenuValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="menuValidation(Credit Cards, Best Buy Credit Card: Rewards &amp; Financing)">
+                  </a> <!-- menuValidation(Credit Cards, Best Buy Credit Card: Rewards & Financing) -->
+                  <span class="method-name">menuValidation</span>
+                  <span class="parameters">(Credit Cards, Best Buy Credit Card: Rewards & Financing)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="menuValidation(Gift Ideas, Gift Ideas 2024: Best Gifts to Give This Year - Best Buy)">
+                  </a> <!-- menuValidation(Gift Ideas, Gift Ideas 2024: Best Gifts to Give This Year - Best Buy) -->
+                  <span class="method-name">menuValidation</span>
+                  <span class="parameters">(Gift Ideas, Gift Ideas 2024: Best Gifts to Give This Year - Best Buy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="menuValidation(Gift Cards, Gifts Cards and E-Gift Cards - Best Buy)">
+                  </a> <!-- menuValidation(Gift Cards, Gifts Cards and E-Gift Cards - Best Buy) -->
+                  <span class="method-name">menuValidation</span>
+                  <span class="parameters">(Gift Cards, Gifts Cards and E-Gift Cards - Best Buy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="menuValidation(My Best Buy Memberships, My Best Buy Memberships)">
+                  </a> <!-- menuValidation(My Best Buy Memberships, My Best Buy Memberships) -->
+                  <span class="method-name">menuValidation</span>
+                  <span class="parameters">(My Best Buy Memberships, My Best Buy Memberships)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="menuValidation(Top Deals, Top Deals and Featured Offers on Electronics - Best Buy)">
+                  </a> <!-- menuValidation(Top Deals, Top Deals and Featured Offers on Electronics - Best Buy) -->
+                  <span class="method-name">menuValidation</span>
+                  <span class="parameters">(Top Deals, Top Deals and Featured Offers on Electronics - Best Buy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="menuValidation(Yes, Best Buy Sells That, Yes, Best Buy Sells That – Best Buy)">
+                  </a> <!-- menuValidation(Yes, Best Buy Sells That, Yes, Best Buy Sells That – Best Buy) -->
+                  <span class="method-name">menuValidation</span>
+                  <span class="parameters">(Yes, Best Buy Sells That, Yes, Best Buy Sells That – Best Buy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC001_SignUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignUpTest(Test, User, test16@guvi16.com, Guvitest@123, 5555551234)">
+                  </a> <!-- SignUpTest(Test, User, test16@guvi16.com, Guvitest@123, 5555551234) -->
+                  <span class="method-name">SignUpTest</span>
+                  <span class="parameters">(Test, User, test16@guvi16.com, Guvitest@123, 5555551234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC007_LinkIsNotBrokenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LinkIsNotBrokenTest">
+                  </a> <!-- LinkIsNotBrokenTest -->
+                  <span class="method-name">LinkIsNotBrokenTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC009_CheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckOutTest(aswin, kumar, aswinkumar_r@outlook.com, 5555551234, 90 Bedford st corner of Groove st, New York City...)">
+                  </a> <!-- CheckOutTest(aswin, kumar, aswinkumar_r@outlook.com, 5555551234, 90 Bedford st corner of Groove st, New York City...) -->
+                  <span class="method-name">CheckOutTest</span>
+                  <span class="parameters">(aswin, kumar, aswinkumar_r@outlook.com, 5555551234, 90 Bedford st corner of Groove st, New York City, NY, 10014)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\JAT-Guvi\BestBuyCapstoneProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utility.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://www.bestbuy.com&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.TC001_SignUpTest&quot;/&gt;
+      &lt;class name=&quot;testcases.TC002_LoginTest&quot;/&gt;
+      &lt;class name=&quot;testcases.TC003_BottomLinksValidation&quot;/&gt;
+      &lt;class name=&quot;testcases.TC004_SearchAndAddToCartTest&quot;/&gt;
+      &lt;class name=&quot;testcases.TC005_ShopByDepartmentTest&quot;/&gt;
+      &lt;class name=&quot;testcases.TC006_ShopByBrandTest&quot;/&gt;
+      &lt;class name=&quot;testcases.TC007_LinkIsNotBrokenTest&quot;/&gt;
+      &lt;class name=&quot;testcases.TC008_MenuValidation&quot;/&gt;
+      &lt;class name=&quot;testcases.TC009_CheckoutTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (9 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'CheckOutTest')
+data.setCell(0, 2, 'testcases.TC009_CheckoutTest')
+data.setCell(0, 3, 84423);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ShopByBrandTest')
+data.setCell(1, 2, 'testcases.TC006_ShopByBrandTest')
+data.setCell(1, 3, 59935);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Shopbydept')
+data.setCell(2, 2, 'testcases.TC005_ShopByDepartmentTest')
+data.setCell(2, 3, 50958);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'SignUpTest')
+data.setCell(3, 2, 'testcases.TC001_SignUpTest')
+data.setCell(3, 3, 45534);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'menuValidation')
+data.setCell(4, 2, 'testcases.TC008_MenuValidation')
+data.setCell(4, 3, 43734);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'SearchandAddToCart')
+data.setCell(5, 2, 'testcases.TC004_SearchAndAddToCartTest')
+data.setCell(5, 3, 40273);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'SignUpTest')
+data.setCell(6, 2, 'testcases.TC001_SignUpTest')
+data.setCell(6, 3, 35470);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'LoginTest')
+data.setCell(7, 2, 'testcases.TC002_LoginTest')
+data.setCell(7, 3, 34688);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'menuValidation')
+data.setCell(8, 2, 'testcases.TC008_MenuValidation')
+data.setCell(8, 3, 27759);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'LinkIsNotBrokenTest')
+data.setCell(9, 2, 'testcases.TC007_LinkIsNotBrokenTest')
+data.setCell(9, 3, 25360);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'menuValidation')
+data.setCell(10, 2, 'testcases.TC008_MenuValidation')
+data.setCell(10, 3, 24513);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'menuValidation')
+data.setCell(11, 2, 'testcases.TC008_MenuValidation')
+data.setCell(11, 3, 23198);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'BottonLinksValidation')
+data.setCell(12, 2, 'testcases.TC003_BottomLinksValidation')
+data.setCell(12, 3, 22778);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'BottonLinksValidation')
+data.setCell(13, 2, 'testcases.TC003_BottomLinksValidation')
+data.setCell(13, 3, 21762);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'BottonLinksValidation')
+data.setCell(14, 2, 'testcases.TC003_BottomLinksValidation')
+data.setCell(14, 3, 20012);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'BottonLinksValidation')
+data.setCell(15, 2, 'testcases.TC003_BottomLinksValidation')
+data.setCell(15, 3, 19468);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'menuValidation')
+data.setCell(16, 2, 'testcases.TC008_MenuValidation')
+data.setCell(16, 3, 19254);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'BottonLinksValidation')
+data.setCell(17, 2, 'testcases.TC003_BottomLinksValidation')
+data.setCell(17, 3, 19033);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'menuValidation')
+data.setCell(18, 2, 'testcases.TC008_MenuValidation')
+data.setCell(18, 3, 18597);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'menuValidation')
+data.setCell(19, 2, 'testcases.TC008_MenuValidation')
+data.setCell(19, 3, 17142);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC001_SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC003_BottomLinksValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC002_LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC008_MenuValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC009_CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">9 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC001_SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">1144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SignUpTest(Test, User, test16@guvi16.com, Guvitest@123, 5555551234)</span>
+                <span class="method-start">7407 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">43106 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SignUpTest(Aswin, Kumar, aswinkumar_r@outlook.com, Missisippi@123, 7010778832)</span>
+                <span class="method-start">48852 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC002_LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">95010 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginTest(aswinkumar_r@outlook.com, Missisippi@123, Aswin)</span>
+                <span class="method-start">98744 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC003_BottomLinksValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">133860 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BottonLinksValidation(Accessibility, Accessibility - Best Buy)</span>
+                <span class="method-start">137744 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">156948 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BottonLinksValidation(Terms & Conditions, BestBuy.com Terms and Conditions)</span>
+                <span class="method-start">161917 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">184932 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BottonLinksValidation(Privacy, Privacy Policy Hub - Best Buy)</span>
+                <span class="method-start">188517 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">208548 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BottonLinksValidation(State Privacy Rights, State Privacy Rights - Best Buy)</span>
+                <span class="method-start">212295 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">232595 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BottonLinksValidation(Interest-Based Ads, Interest-Based Ads - Best Buy)</span>
+                <span class="method-start">236023 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC004_SearchAndAddToCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">258060 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearchandAddToCart</span>
+                <span class="method-start">262184 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC005_ShopByDepartmentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">302768 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Shopbydept</span>
+                <span class="method-start">308749 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC006_ShopByBrandTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">360591 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ShopByBrandTest</span>
+                <span class="method-start">380316 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC007_LinkIsNotBrokenTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">440522 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LinkIsNotBrokenTest</span>
+                <span class="method-start">444637 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC008_MenuValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">470805 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">menuValidation(Top Deals, Top Deals and Featured Offers on Electronics - Best Buy)</span>
+                <span class="method-start">475087 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">519223 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">menuValidation(Deal of the Day, Best Buy | Official Online Store | Shop Now & Save)</span>
+                <span class="method-start">523383 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">542427 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">menuValidation(Yes, Best Buy Sells That, Yes, Best Buy Sells That – Best Buy)</span>
+                <span class="method-start">546279 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">565914 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">menuValidation(My Best Buy Memberships, My Best Buy Memberships)</span>
+                <span class="method-start">570541 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">595320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">menuValidation(Credit Cards, Best Buy Credit Card: Rewards & Financing)</span>
+                <span class="method-start">600670 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">618266 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">menuValidation(Gift Cards, Gifts Cards and E-Gift Cards - Best Buy)</span>
+                <span class="method-start">627510 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">651522 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">menuValidation(Gift Ideas, Gift Ideas 2024: Best Gifts to Give This Year - Best Buy)</span>
+                <span class="method-start">658405 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC009_CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com)</span>
+                <span class="method-start">687055 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckOutTest(aswin, kumar, aswinkumar_r@outlook.com, 5555551234, 90 Bedford st corner of Groove st, New York City...)</span>
+                <span class="method-start">692659 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
